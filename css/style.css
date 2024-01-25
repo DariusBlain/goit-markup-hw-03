@@ -149,7 +149,7 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
 }
@@ -161,10 +161,13 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border: none;
   border-radius: 4px;
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
 }
 .hero-container {
   display: flex;
@@ -184,11 +187,11 @@ img {
 .feature {
   background-color: #fff;
   flex-shrink: 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .feature-list {
-  padding-top: 120px;
-  padding-bottom: 120px;
   display: flex;
   gap: 24px;
 }
@@ -196,7 +199,6 @@ img {
 .feature-list-item {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
 .feature-list-title {
@@ -206,6 +208,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   width: 264px;
+  margin-bottom: 8px;
 }
 
 .feature-list-text {
@@ -242,15 +245,13 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
-  padding-bottom: 32px;
 }
 .portfolio-list-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  padding: 32px 0;
 }
 
 .portfolio-title {
@@ -271,6 +272,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .portfolio-list-text {
@@ -300,7 +302,6 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-
   margin-bottom: 72px;
 }
 
@@ -308,10 +309,10 @@ img {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  row-gap: 48px;
 }
 
 .our-portfolio-item {
-  border: 1px solid #e7e9fc;
   background: #fff;
   padding-bottom: 32px;
   width: 360px;
@@ -321,16 +322,16 @@ img {
 }
 
 .our-portfolio-picture {
-  margin-bottom: 32px;
 }
 
 .our-portfolio-container {
   display: flex;
-  padding: 0px 16px;
+  padding: 32px 16px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
+  border: 1px solid #e7e9fc;
 }
 
 .our-portfolio-subtitle {
@@ -370,7 +371,8 @@ img {
 }
 
 .logo-footer {
-  margin: 0;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .footer-text {
