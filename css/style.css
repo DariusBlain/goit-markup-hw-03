@@ -332,6 +332,7 @@ img {
   align-items: flex-start;
   gap: 8px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .our-portfolio-subtitle {
